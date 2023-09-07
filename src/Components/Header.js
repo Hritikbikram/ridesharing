@@ -13,7 +13,7 @@ const Header = () => {
     
     <header >
     
-    <div className='py-1 px-[10%] bg-gray-200 flex text-xl justify-end'>
+    <div className='py-6 px-[10%] bg-gray-200 flex text-xl justify-between'>
 
 
 
@@ -29,9 +29,14 @@ const Header = () => {
       :
         <NavLink to="login" className='p-3 pt-6'>Login</NavLink>
       } */}
+    <div>
 
-      <NavLink to="login" className='p-3 pt-6'>Login</NavLink>
+      <NavLink to="dashboard" className="font-semibold">My Account</NavLink>
+      </div>
 
+      <div>
+      <NavLink to="login" className='font-semibold p-3 pt-6'>Login</NavLink>
+      </div>
 
 
       
@@ -62,13 +67,15 @@ const Header = () => {
 <NavLink className="hover:text-orange-300 duration-200" to='/'>Home</NavLink>
 
 
-<NavLink className="hover:text-orange-300 duration-200" to='/cars'>Car</NavLink>
+<NavLink className="hover:text-orange-300 duration-200" to='/destination'>Destination</NavLink>
 
-<NavLink className="hover:text-orange-300 duration-200" to='/bikes'>Bikes</NavLink>
+<NavLink className="hover:text-orange-300 duration-200" to='/package'>Packages</NavLink>
 
 
 
-<NavLink className="hover:text-orange-300 duration-200" to='/drivers'>Drivers</NavLink>
+<NavLink className="hover:text-orange-300 duration-200" to='/guide'>Guide</NavLink>
+
+
 
 <NavLink className="hover:text-orange-300 duration-200" to='/blog'>Blogs</NavLink>
 
@@ -109,17 +116,20 @@ const Header = () => {
 </li>
 
 <li className='py-1'>      
-<NavLink className="hover:text-orange-300 duration-200" to='/car'>Cars</NavLink>
+<NavLink className="hover:text-orange-300 duration-200" to='/destination'>Destination</NavLink>
 </li>
 
 
 <li className='py-1'>
-<NavLink className="hover:text-orange-300 duration-200" to='/bike'>Bikes</NavLink>
+<NavLink className="hover:text-orange-300 duration-200" to='/package'>Packages</NavLink>
 </li>
 
 
+<li className='py-1'>
+<NavLink className="hover:text-orange-300 duration-200" to='/guide'>Guide</NavLink>
+</li>
 
-<NavLink className="hover:text-orange-300 duration-200" to='/driver'>Drivers</NavLink>
+
 
 <li className='py-1'>      
 <NavLink className="hover:text-orange-300 duration-200" to='/about'>About</NavLink>

@@ -3,7 +3,7 @@ import Swiper from '../Components/Swiper';
 import Footer from '../Components/Footer';
 
 import { Button, Card, CardBody, CardFooter, CardHeader, Input, Typography } from '@material-tailwind/react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 import product1 from '../Images/product1.png';
@@ -17,11 +17,11 @@ import product3 from '../Images/product3.png';
 import delivery from '../Images/delivery.png';
 import quality from '../Images/quality.png';
 import cashback from '../Images/cashback.png';
-import support from '../Images/support.png';
+import Destinations from '../Components/Destinations';
 
 const Home = () => {
 
-  const nav=useNavigate();
+  // const nav=useNavigate();
   return (
     <>
     
@@ -31,61 +31,43 @@ const Home = () => {
 
 
 
+ {/* Destination */}
 
 
 
 
-{/* Service */}
+<div className='mt-[2%]'>
 
+    <div className='flex justify-between px-[10%] py-10'>
 
-<div className='mt-10'>
-
-<h1 className='text-3xl md:text-2xl font-bold text-center'>Our Services</h1>
-
-  <div className='px-[10%] py-10'>
-      <div className='grid grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1'>
-
-        <div className='text-center shadow-xl  p-4 hover:cursor-pointer' onClick={()=>nav('/drivers')}>
-
-          <img src={delivery} alt="Delivery" className='pt-10 pb-4 pl-[40%] items-center'/>
-
-          <h3 className='text-2xl pb-4 font-bold'>Drivers Rental</h3>
-          <p className='pb-10 text-blue-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est nobis incidunt ratione iure</p>
-
-
-
+        <div>
+          <p className='font-bold text-lg'>PLAN YOUR TRIP</p>
+          <h3 className='font-extrabold text-5xl'>Where to Next?</h3>
         </div>
 
-        <div className='text-center shadow-xl  p-4 hover:cursor-pointer' onClick={()=>nav('/cars')}>
-
-          <img src={cashback} alt="Delivery" className='pt-10 pb-4 pl-[40%] items-center'/>
-
-          <h3 className='text-2xl pb-4 font-bold'>Car Rentals</h3>
-          <p className='pb-10 text-blue-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est nobis incidunt ratione iure</p>
-
-
-
+        <div>
+          <a className='bg-blue-800 text-white rounded-full hover:bg-blue-600 py-3 px-8 duration-500' href="/destination">View All Destination</a>
         </div>
 
-        <div className='text-center shadow-xl  p-4 hover:cursor-pointer' onClick={()=>nav('/bikes')}>
-
-          <img src={quality} alt="Delivery" className='pt-10 pb-4 pl-[40%] items-center'/>
-
-          <h3 className='text-2xl pb-4 font-bold'>Bike Rentals</h3>
-          <p className='pb-10 text-blue-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est nobis incidunt ratione iure</p>
-
-
-
-        </div>
-
-
-      </div>
     </div>
+
+
+    <div className='px-[10%] py-10'>
+
+      <Destinations />
+
+    </div>
+
+
 </div>
 
 
 
-{/* Services End */}
+
+{/* Destination End */}
+
+
+
 
 
 
@@ -93,7 +75,7 @@ const Home = () => {
         {/* Subscribe */}
 
 
-        <div className='bg-red-50'>
+        <div className='bg-red-50 mt-[5%]'>
 
             <div className='text-center p-[6%]'>
               <h1 className='text-6xl md:text-3xl font-semibold'>Best & Reliable Service</h1>
@@ -127,11 +109,65 @@ const Home = () => {
 
 
 
+{/* Service */}
+
+
+<div className='mt-10'> 
+
+<h1 className='text-3xl  md:text-2xl font-bold text-center'>Our Services</h1>
+
+  <div className='px-[10%] py-10'>
+      <div className='grid grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1'>
+
+        <div className='text-center shadow-xl  p-4 hover:cursor-pointer'>
+
+          <img src={cashback} alt="Delivery" className='pt-10 pb-4 pl-[40%] items-center'/>
+
+          <h3 className='text-2xl pb-4 font-bold'>Affordable Packages</h3>
+          <p className='pb-10 text-blue-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est nobis incidunt ratione iure</p>
+
+
+
+        </div>
+
+        <div className='text-center shadow-xl  p-4 hover:cursor-pointer'>
+
+          <img src={delivery} alt="Delivery" className='pt-10 pb-4 pl-[40%] items-center'/>
+
+          <h3 className='text-2xl pb-4 font-bold'>Vehicle Rentals</h3>
+          <p className='pb-10 text-blue-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est nobis incidunt ratione iure</p>
+
+
+
+        </div>
+
+        <div className='text-center shadow-xl  p-4 hover:cursor-pointer'>
+
+          <img src={quality} alt="Delivery" className='pt-10 pb-4 pl-[40%] items-center'/>
+
+          <h3 className='text-2xl pb-4 font-bold'>Places Recommendation</h3>
+          <p className='pb-10 text-blue-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est nobis incidunt ratione iure</p>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+</div>
+
+
+
+{/* Services End */}
+
+
+
 
 {/* Offers */}
 
 
-<div className='mt-10'>
+{/* <div className='mt-10'>
 
 <h1 className='text-3xl md:text-2xl font-bold text-center'>What We Offer? ? ?</h1>
 
@@ -184,7 +220,7 @@ const Home = () => {
 
       </div>
     </div>
-</div>
+</div> */}
 
 
 
@@ -203,7 +239,7 @@ const Home = () => {
 
   <div className='px-[10%]  py-[1%]'>
 
-<h1  className='text-3xl font-bold pb-[5%] text-center'>Our Blogs</h1>
+<h1  className='text-3xl font-bold pb-[5%] text-center'>Travel Stories</h1>
 
 <div className='grid gap-4 grid-cols-3  md:grid md:grid-cols-2'>
 

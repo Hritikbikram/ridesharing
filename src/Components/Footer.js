@@ -48,21 +48,21 @@ const Footer = () => {
 
 
                   <li className='font-bold text-2xl text-black pb-5'>
-                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Categories</NavLink>
+                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Top Destinations</NavLink>
                   </li>
                     
                   <li className='pb-2'>
-                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Car Rental Service</NavLink>
+                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Kathmandu</NavLink>
                   </li>
 
                   
                   <li className='pb-2'>
-                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Bike Rental Service</NavLink>
+                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Pokhara</NavLink>
                   </li>
                   
                   
                   <li className='pb-2'>
-                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Driver Rental Service</NavLink>
+                    <NavLink to="/"  className="hover:text-orange-300 duration-200" >Chitwan</NavLink>
                   </li>
                   
               </ul>
@@ -100,7 +100,7 @@ const Footer = () => {
               <ul className='text-blue-gray-600'>
                 
                 <li className='font-bold text-2xl text-black pb-5'>
-                  <NavLink to="/"  className="hover:text-orange-300 duration-200" >Pages</NavLink>
+                  <NavLink to="/"  className="hover:text-orange-300 duration-200" >About Us</NavLink>
                 </li>
 
                 <li className='pb-2'>
